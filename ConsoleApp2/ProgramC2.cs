@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 
-class Program2
+class ProgramC2
 {
     public static void Num_Comparator()
     {

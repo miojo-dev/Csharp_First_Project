@@ -28,38 +28,42 @@ public class Cond
 
         Console.Clear();
 
-        if (n == 0)
+        switch (n)
         {
-            Program1.Num_Name();
+            case 0:
+                {
+                    ProgramC1.Num_Name();
+                }
+                break;
+            case 1:
+                {
+                    ProgramC2.Num_Comparator();
+                }
+                break;
+            case 2:
+                {
+                    ProgramC3.Idade();
+                }
+                break;
+            case 3:
+                {
+                    ProgramC4.Adult2();
+                }
+                break;
+            case 4:
+                {
+                    ProgramC5.Id_P();
+                }
+                break;
+            case 5:
+                {
+                    ProgramC6.Id_M_10();
+                }
+                break;
         }
-        else if (n == 1)
-            {
-                Program2.Num_Comparator();
-            }
-        else if (n == 2)
-            {
-                Program4.Idade();
-            }
-        else if (n == 3)
-            {
-                Program5.Sort(); ;
-            }
-        else if (n == 4)
-            {
-                Program6.Adult2();
-            }
-        else if (n == 5)
-            {
-                Program7.Id_P();
-            }
-        else if (n == 6)
-            {
-                Program8.Id_M_10();
-            }
-        else
+        if (n < 0 || n > 1)
         {
-            Console.WriteLine("Número inválido");
-            Center.Main();
+            Start.Main();
         }
     }
 }

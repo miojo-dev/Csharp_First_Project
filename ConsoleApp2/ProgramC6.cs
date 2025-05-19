@@ -3,10 +3,10 @@ menor que 10 (dez). Escreva os dois números e a informação se
 pelo menos um deles é ou não menor que 10 (dez);*/
 using System;
 
-public class Program8
+public class ProgramC6
 {
-	public static void Id_M_10()
-	{
+    public static void Id_M_10()
+    {
         int n1, n2;
         string m = "não";
 
@@ -14,7 +14,7 @@ public class Program8
         n1 = int.Parse(Console.ReadLine());
         n2 = int.Parse(Console.ReadLine());
 
-        if (n1 < 10 || n2 <10)
+        if (n1 < 10 || n2 < 10)
         {
             m = "Sim";
         }

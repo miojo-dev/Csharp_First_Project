@@ -1,10 +1,10 @@
 ﻿using System;
 
-public class Center
+public class Start
 {
-	public static void Main()
-	{
-		int n, total = 20; // Tamanho da barra de progresso
+    public static void Main()
+    {
+        int n, total = 20; // Tamanho da barra de progresso
 
         Console.WriteLine("Selecione um tipo de programa: \n");
         Console.WriteLine(0 + "--|Condicionais.");
@@ -12,7 +12,7 @@ public class Center
         n = int.Parse(Console.ReadLine());
 
         Console.Clear();
-        
+
         Console.Write("\n\nCarregando: ");
         for (int i = 0; i < total; i++)
         {
@@ -22,18 +22,22 @@ public class Center
 
         Console.Clear();
 
-		if (n == 0)
-		{
-            Cond.Condicionais();
-        }
-        else if(n == 1)
+        switch (n)
+        {
+            case 0:
+            {
+                Cond.Condicionais();
+            }
+            break;
+            case 1:
             {
                 Rep.Repeticão();
             }
-        else
+            break;
+        }
+        if (n < 0 || n > 1)
         {
-            Console.WriteLine("Número inválido");
-            Center.Main();
+            Main();
         }
     }
 }

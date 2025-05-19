@@ -1,7 +1,7 @@
 ﻿//Crie um programa que escreva 10(dez) vezes o seu nome;
 using System;
 
-public class Name
+public class ProgramR1
 {
 	public static void Nm()
 	{

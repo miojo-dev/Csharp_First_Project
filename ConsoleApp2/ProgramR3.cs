@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 //Teste para estudo (Criado com ChatGPT)
 //Study test (Created with ChatGPT)
-class Program5
+class ProgramR3
 {
     public static void Sort()
     {
