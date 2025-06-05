@@ -13,8 +13,7 @@ public class Cond
         Console.WriteLine(3 + "--|Identificar idade.");
         Console.WriteLine(4 + "--|Organizar numeros em ordem crescente(teste de estudo).");
         Console.WriteLine(5 + "--|Verificar se uma pessoa é adulta.");
-        Console.WriteLine(6 + "--|Identificar soma por período.");
-        Console.WriteLine(7 + "--|Identificar menor que 10.\n");
+        Console.WriteLine(6 + "--|Voltar.\n");
         n = int.Parse(Console.ReadLine());
 
         Console.Clear();
@@ -60,10 +59,17 @@ public class Cond
                     ProgramC6.Id_M_10();
                 }
                 break;
-        }
-        if (n < 0 || n > 1)
-        {
-            Start.Main();
+            case 6:
+                {
+                    Start.Main();
+                }
+                break;
+            default:
+                {
+                    Console.WriteLine("Opção inválida. Tente novamente.");
+                    Cond.Condicionais();
+                }
+                break;
         }
     }
 }

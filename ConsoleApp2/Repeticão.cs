@@ -11,7 +11,8 @@ public class Rep
         Console.WriteLine(1 + "--|Analizador de números.");
         Console.WriteLine(2 + "--|Organizar numeros em ordem crescente(teste de estudo).");
         Console.WriteLine(3 + "--|Soma e mostra quantidade.");
-        Console.WriteLine(4 + "--|Gera números pares até o valor informado.\n");
+        Console.WriteLine(4 + "--|Gera números pares até o valor informado.");
+        Console.WriteLine(5 + "--|Voltar.\n");
         n = int.Parse(Console.ReadLine());
 
         Console.Clear();
@@ -51,11 +52,19 @@ public class Rep
                 {
                     ProgramR5.First_to_Last();
                 }
+            break;
+            case 5:
+                {
+                    Start.Main();
+                }
                 break;
-        }
-        if (n < 0 || n > 1)
-        {
-            Start.Main();
+            default:
+                {
+                    Console.WriteLine("Opção inválida. Tente novamente.");
+                    Rep.Repeticão();
+                }
+                break;
+
         }
     }
 }

@@ -8,16 +8,21 @@ public class Start
 
         Console.WriteLine("Selecione um tipo de programa: \n");
         Console.WriteLine(0 + "--|Condicionais.");
-        Console.WriteLine(1 + "--|Repeticão.\n");
+        Console.WriteLine(1 + "--|Repeticão.");
+        Console.WriteLine(2 + "--|Objetos.");
+        Console.WriteLine(3 + "--|Sair.\n");
         n = int.Parse(Console.ReadLine());
 
         Console.Clear();
 
-        Console.Write("\n\nCarregando: ");
-        for (int i = 0; i < total; i++)
+        if (n < 3)
         {
-            Console.Write(".");
-            Thread.Sleep(35); // Simula o tempo de carregamento
+            Console.Write("\n\nCarregando: ");
+            for (int i = 0; i < total; i++)
+            {
+                Console.Write(".");
+                Thread.Sleep(35); // Simula o tempo de carregamento
+            }
         }
 
         Console.Clear();
@@ -25,19 +30,37 @@ public class Start
         switch (n)
         {
             case 0:
-            {
+                {
                 Cond.Condicionais();
-            }
-            break;
+                }
+                break;
             case 1:
-            {
-                Rep.Repeticão();
-            }
-            break;
-        }
-        if (n < 0 || n > 1)
-        {
-            Main();
+                {
+                    Rep.Repeticão();
+                }
+                break;
+            case 2:
+                {
+                   //Obj.Objects();
+                }
+                break;
+            case 3:
+                {
+                    Console.Write("\n\nEncerrando programa: ");
+                    for (int i = 0; i < total; i++)
+                    {
+                        Console.Write(".");
+                        Thread.Sleep(35); // Simula o tempo de carregamento
+                    }
+                    Environment.Exit(0);
+                }
+                break;
+            default:
+                {
+                Console.WriteLine("Opção inválida. Tente novamente.");
+                Main();
+                }
+                break;
         }
     }
 }
