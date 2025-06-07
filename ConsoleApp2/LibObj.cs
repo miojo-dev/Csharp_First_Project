@@ -3,5 +3,5 @@
 public class Bank
 {
 	public string agency;
-	public int bank;
+	public int bankNum;
 }

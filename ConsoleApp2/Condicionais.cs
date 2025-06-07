@@ -4,8 +4,7 @@ public class Cond
 {
     public static void Condicionais()
     {
-        int n, total = 20; // Tamanho da barra de progresso
-
+        int n;
         Console.WriteLine("Selecione um dos programas: \n");
         Console.WriteLine(0 + "--|Número e Nome.");
         Console.WriteLine(1 + "--|Comparador de números.");
@@ -16,16 +15,7 @@ public class Cond
         Console.WriteLine(6 + "--|Voltar.\n");
         n = int.Parse(Console.ReadLine());
 
-        Console.Clear();
-
-        Console.Write("\n\nCarregando: ");
-        for (int i = 0; i < total; i++)
-        {
-            Console.Write(".");
-            Thread.Sleep(35); // Simula o tempo de carregamento
-        }
-
-        Console.Clear();
+        Start.Loading();
 
         switch (n)
         {

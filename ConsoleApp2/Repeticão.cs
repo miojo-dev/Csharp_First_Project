@@ -4,8 +4,7 @@ public class Rep
 {
     public static void Repeticão()
     {
-        int n, total = 20; // Tamanho da barra de progresso
-
+        int n;
         Console.WriteLine("Selecione um dos programas: \n");
         Console.WriteLine(0 + "--|Nome x 10.");
         Console.WriteLine(1 + "--|Analizador de números.");
@@ -15,16 +14,7 @@ public class Rep
         Console.WriteLine(5 + "--|Voltar.\n");
         n = int.Parse(Console.ReadLine());
 
-        Console.Clear();
-
-        Console.Write("\n\nCarregando: ");
-        for (int i = 0; i < total; i++)
-        {
-            Console.Write(".");
-            Thread.Sleep(35); // Simula o tempo de carregamento
-        }
-
-        Console.Clear();
+        Start.Loading();
 
         switch (n)
         {
