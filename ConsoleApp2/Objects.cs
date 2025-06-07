@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 
 public class Obj
 {
@@ -23,7 +23,7 @@ public class Obj
 		{
 			case 0:
 				{
-					ProgramO1.
+					ProgramO1.bank();
 				}
 				break;
             case 1:
@@ -49,4 +49,4 @@ public class Obj
 				break;
         }
     }
-}*/
+}
