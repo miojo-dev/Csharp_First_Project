@@ -2,16 +2,16 @@
 
 public class Rep
 {
-    public static void Repeticão()
+    public static void Reptition()
     {
         int n;
-        Console.WriteLine("Selecione um dos programas: \n");
-        Console.WriteLine(0 + "--|Nome x 10.");
-        Console.WriteLine(1 + "--|Analizador de números.");
-        Console.WriteLine(2 + "--|Organizar numeros em ordem crescente(teste de estudo).");
-        Console.WriteLine(3 + "--|Soma e mostra quantidade.");
-        Console.WriteLine(4 + "--|Gera números pares até o valor informado.");
-        Console.WriteLine(5 + "--|Voltar.\n");
+        Console.WriteLine("Select the program: \n");
+        Console.WriteLine(0 + "--|Name 10x.");
+        Console.WriteLine(1 + "--|Number analizer.");
+        Console.WriteLine(2 + "--|Sort number (Study test).");
+        Console.WriteLine(3 + "--|Sum and show quantity.");
+        Console.WriteLine(4 + "--|Generate even number up to the given number");
+        Console.WriteLine(5 + "--|Back.\n");
         n = int.Parse(Console.ReadLine());
 
         Start.Loading();
@@ -50,8 +50,8 @@ public class Rep
                 break;
             default:
                 {
-                    Console.WriteLine("Opção inválida. Tente novamente.");
-                    Rep.Repeticão();
+                    Console.WriteLine("Invalid operation! Try again");
+                    Rep.Reptition();
                 }
                 break;
 

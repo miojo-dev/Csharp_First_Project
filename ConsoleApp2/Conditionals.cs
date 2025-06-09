@@ -2,17 +2,17 @@
 
 public class Cond
 {
-    public static void Condicionais()
+    public static void Conditionals()
     {
         int n;
-        Console.WriteLine("Selecione um dos programas: \n");
-        Console.WriteLine(0 + "--|Número e Nome.");
-        Console.WriteLine(1 + "--|Comparador de números.");
-        Console.WriteLine(2 + "--|Organizar números aleatórios.");
-        Console.WriteLine(3 + "--|Identificar idade.");
-        Console.WriteLine(4 + "--|Organizar numeros em ordem crescente(teste de estudo).");
-        Console.WriteLine(5 + "--|Verificar se uma pessoa é adulta.");
-        Console.WriteLine(6 + "--|Voltar.\n");
+        Console.WriteLine("Select the program: \n");
+        Console.WriteLine(0 + "--|Number & Name.");
+        Console.WriteLine(1 + "--|Number comparator.");
+        Console.WriteLine(2 + "--|Age analizer.");
+        Console.WriteLine(3 + "--|Adult identificator.");
+        Console.WriteLine(4 + "--|Sum analizer.");
+        Console.WriteLine(5 + "--|Number minor than ten.");
+        Console.WriteLine(6 + "--|Back.\n");
         n = int.Parse(Console.ReadLine());
 
         Start.Loading();
@@ -56,8 +56,8 @@ public class Cond
                 break;
             default:
                 {
-                    Console.WriteLine("Opção inválida. Tente novamente.");
-                    Cond.Condicionais();
+                    Console.WriteLine("Invalid operation! Try again");
+                    Cond.Conditionals();
                 }
                 break;
         }

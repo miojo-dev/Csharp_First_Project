@@ -8,7 +8,7 @@ public class ProgramC5
     public static void Id_P()
     {
         int n1, n2, s;
-        string s_r = "não";
+        string s_r = "não ";
 
         Console.Write("Informe dois números: ");
         n1 = int.Parse(Console.ReadLine());
@@ -18,10 +18,10 @@ public class ProgramC5
 
         if (s >= 20 && s <= 50)
         {
-            s_r = "Sim";
+            s_r = " ";
         }
 
         Console.WriteLine(n1 + " + " + n2 + " = " + s);
-        Console.WriteLine("A soma está entre 20 e 50: " + s_r);
+        Console.WriteLine("A soma " + s_r + "está entre 20 e 50");
     }
 }
