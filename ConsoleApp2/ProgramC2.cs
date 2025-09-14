@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 
-class ProgramC2
+abstract class ProgramC2
 {
     public static void Num_Comparator()
     {
@@ -18,10 +18,12 @@ class ProgramC2
         {
             m = n2;
         }
+
         if (n3 > m)
         {
             m = n3;
         }
+
         if (n1 == n3 && n2 == n1)
         {
             Console.WriteLine("Todos os numeros sao iguais");

@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class ProgramC4
+public abstract class ProgramC4
 {
     public static void Adult2()
     {

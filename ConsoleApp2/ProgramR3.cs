@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 //Teste para estudo (Criado com ChatGPT)
 //Study test (Created with ChatGPT)
-class ProgramR3
+abstract class ProgramR3
 {
     public static void Sort()
     {
@@ -24,6 +24,7 @@ class ProgramR3
         {
             Console.Write(numero + " ");
         }
+
         Console.WriteLine();
 
         numeros.Sort();
@@ -33,6 +34,7 @@ class ProgramR3
         {
             Console.Write(numero + " ");
         }
+
         Console.WriteLine();
     }
 }

@@ -5,7 +5,7 @@
 
 using System;
 
-public class ProgramR4
+public abstract class ProgramR4
 {
     public static void S_e_Q()
     {

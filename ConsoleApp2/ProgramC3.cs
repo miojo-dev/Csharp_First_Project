@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class ProgramC3
+public abstract class ProgramC3
 {
     public static void Idade()
     {

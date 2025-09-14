@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Cond
+public abstract class Cond
 {
     public static void Conditionals()
     {
@@ -23,42 +23,50 @@ public class Cond
                 {
                     ProgramC1.Num_Name();
                 }
+
                 break;
             case 1:
                 {
                     ProgramC2.Num_Comparator();
                 }
+
                 break;
             case 2:
                 {
                     ProgramC3.Idade();
                 }
+
                 break;
             case 3:
                 {
                     ProgramC4.Adult2();
                 }
+
                 break;
             case 4:
                 {
                     ProgramC5.Id_P();
                 }
+
                 break;
             case 5:
                 {
                     ProgramC6.Id_M_10();
                 }
+
                 break;
             case 6:
                 {
                     Start.Main();
                 }
+
                 break;
             default:
                 {
                     Console.WriteLine("Invalid operation! Try again");
                     Cond.Conditionals();
                 }
+
                 break;
         }
     }

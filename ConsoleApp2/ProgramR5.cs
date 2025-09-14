@@ -2,7 +2,7 @@
 
 using System;
 
-public class ProgramR5
+public abstract class ProgramR5
 {
 	public static void First_to_Last()
 	{

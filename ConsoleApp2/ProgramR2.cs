@@ -3,7 +3,7 @@
 //seja diferente de o(zero);
 using System;
 
-public class ProgramR2
+public abstract class ProgramR2
 {
     public static void Num_Ana()
     {

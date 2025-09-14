@@ -3,7 +3,7 @@ menor que 10 (dez). Escreva os dois números e a informação se
 pelo menos um deles é ou não menor que 10 (dez);*/
 using System;
 
-public class ProgramC6
+public abstract class ProgramC6
 {
     public static void Id_M_10()
     {

@@ -3,7 +3,7 @@ soma dos dois está entre 20 e 50. Escreva os dois números, a
 soma e a informação se está ou se não está entre 20 e 50;*/
 using System;
 
-public class ProgramC5
+public abstract class ProgramC5
 {
     public static void Id_P()
     {
